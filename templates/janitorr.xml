@@ -32,6 +32,6 @@
         The application will not start until you supply this file.  &#xD;
         https://github.com/Schaka/janitorr/blob/develop/src/main/resources/application-template.yml &#xD;
     </Requires>
-    <Config Name="Media Path" Target="/data/media" Default="" Mode="rw" Description="Add the directory to where your media is stored" Type="Path" Display="always" Required="true" Mask="false"/>
+    <Config Name="Media Path" Target="/data" Default="" Mode="rw" Description="Add the directory to where your media is stored" Type="Path" Display="always" Required="true" Mask="false"/>
     <Config Name="Config Path" Target="/config" Default="/mnt/user/appdata/janitorr/config" Mode="rw" Description="Where the config file will be stored" Type="Path" Display="advanced" Required="true" Mask="false">/mnt/user/appdata/janitorr/config</Config>
 </Container>
