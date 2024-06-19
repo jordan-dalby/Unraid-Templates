@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Maintainer>
+    <Icon>https://avatars.githubusercontent.com/u/1347620?v=4</Icon>
+    <Profile>
+        A collection of Unraid templates that I use and maintain.  I am always looking for feedback and suggestions for improvements and additional templates.
+    </Profile>
+    <DonateLink>https://github.com/sponsors/JamsRepos</DonateLink>
+    <DonateText>Feeling generous?  Consider sponsoring me on GitHub!</DonateText>
+    <WebPage>https://github.com/JamsRepos/Unraid-Templates</WebPage>
+    <Forum>https://github.com/JamsRepos/Unraid-Templates/issues</Forum>
+</Maintainer>

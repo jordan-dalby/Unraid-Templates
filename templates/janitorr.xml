@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<Container version="2">
+    <Name>Janitorr</Name>
+    <Repository>ghcr.io/schaka/janitorr:latest</Repository>
+    <Registry>https://github.com/Schaka/janitorr</Registry>
+    <Branch>
+        <Tag>latest</Tag>
+        <TagDescription>Latest stable release</TagDescription>
+    </Branch>
+    <Branch>
+        <Tag>native</Tag>
+        <TagDescription>Latest native release which is lower CPU and memory usage for lower performance systems</TagDescription>
+    </Branch>
+    <Branch>
+        <Tag>develop</Tag>
+        <TagDescription>Latest develop release</TagDescription>
+    </Branch>
+    <Network>bridge</Network>
+    <Shell>bash</Shell>
+    <Privileged>false</Privileged>
+    <Support>https://github.com/Schaka/janitorr/issues</Support>
+    <Project>https://github.com/Schaka/janitorr</Project>
+    <Overview>Cleans your Radarr, Sonarr, Jellyseerr and Jellyfin before you run out of space on your server</Overview>
+    <Category>MediaApp:Video MediaServer:Video Other: Tools: Status:Stable</Category>
+    <Icon>https://raw.githubusercontent.com/JamsRepos/Unraid-Templates/master/logos/janitorr.png</Icon>
+    <TemplateURL>https://raw.githubusercontent.com/JamsRepos/Unraid-Templates/main/templates/janitorr.xml</TemplateURL>
+    <Maintainer>
+        <WebPage>https://github.com/JamsRepos</WebPage>
+    </Maintainer>
+    <Requires>
+        Before using this, please make sure you've created the application.yml file and put it in the correct config directory you intend to map. &#xD;
+        The application will not start until you supply this file.  &#xD;
+        https://github.com/Schaka/janitorr/blob/develop/src/main/resources/application-template.yml &#xD;
+    </Requires>
+    <Config Name="Media Path" Target="/data/media" Default="" Mode="rw" Description="Add the directory to where your media is stored" Type="Path" Display="always" Required="true" Mask="false"/>
+    <Config Name="Config Path" Target="/config" Default="/mnt/user/appdata/janitorr/config" Mode="rw" Description="Where the config file will be stored" Type="Path" Display="advanced" Required="true" Mask="false">/mnt/user/appdata/janitorr/config</Config>
+</Container>
