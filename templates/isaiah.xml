@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<Container version="2">
+    <Name>Isaiah</Name>
+    <Repository>mosswill/isaiah:latest</Repository>
+    <Registry>https://hub.docker.com/r/mosswill/isaiah</Registry>
+    <Network>bridge</Network>
+    <Shell>bash</Shell>
+    <Privileged>false</Privileged>
+    <Support>https://github.com/will-moss/isaiah/issues</Support>
+    <Project>https://github.com/will-moss/isaiah</Project>
+    <Overview>Self-hostable clone of lazydocker for the web. Manage your Docker fleet with ease.</Overview>
+    <Category>MediaApp:Video MediaServer:Video Other: Tools: Status:Stable</Category>
+    <WebUI>http://[IP]:[PORT:3000]</WebUI>
+    <Icon>https://raw.githubusercontent.com/JamsRepos/Unraid-Templates/master/logos/isaiah.png</Icon>
+    <TemplateURL>https://raw.githubusercontent.com/JamsRepos/Unraid-Templates/main/templates/isaiah.xml</TemplateURL>
+    <Maintainer>
+        <WebPage>https://github.com/JamsRepos</WebPage>
+    </Maintainer>
+    <Requires>
+        This container is a very basic example of what you can do with Isaiah.  &#xD;
+        If you wish to expand on this, please see the documentation for more information.  &#xD;
+        https://github.com/will-moss/isaiah#configuration &#xD;
+    </Requires>
+    <Config Name="Port" Target="3000" Default="" Mode="tcp" Description="" Type="Port" Display="always" Required="true" Mask="false">3912</Config>
+    <Config Name="Authentication Secret" Target="AUTHENTICATION_SECRET" Default="your-very-long-and-mysterious-secret" Mode="" Description="Used to access your servers web portal" Type="Variable" Display="always" Required="true" Mask="true">your-very-long-and-mysterious-secret</Config>
+    <Config Name="Docker Socket" Target="/var/run/docker.sock" Default="/var/run/docker.sock" Mode="rw" Description="" Type="Path" Display="advanced" Required="true" Mask="false">/var/run/docker.sock</Config>
+</Container>
