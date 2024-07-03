@@ -3,18 +3,6 @@
     <Name>Janitorr</Name>
     <Repository>ghcr.io/schaka/janitorr:native</Repository>
     <Registry>https://github.com/Schaka/janitorr</Registry>
-    <Branch>
-        <Tag>native</Tag>
-        <TagDescription>Latest native release which is lower CPU and memory usage for lower performance systems</TagDescription>
-    </Branch>
-    <Branch>
-        <Tag>latest</Tag>
-        <TagDescription>Latest stable release</TagDescription>
-    </Branch>
-    <Branch>
-        <Tag>develop</Tag>
-        <TagDescription>Latest develop release</TagDescription>
-    </Branch>
     <Network>bridge</Network>
     <Shell>bash</Shell>
     <Privileged>false</Privileged>
@@ -33,5 +21,5 @@
         https://github.com/Schaka/janitorr/blob/develop/src/main/resources/application-template.yml &#xD;
     </Requires>
     <Config Name="Media Path" Target="/data" Default="" Mode="rw" Description="Add the directory to where your media is stored" Type="Path" Display="always" Required="true" Mask="false"/>
-    <Config Name="Config Path" Target="/config" Default="/mnt/user/appdata/janitorr/config" Mode="rw" Description="Where the config file will be stored" Type="Path" Display="advanced" Required="true" Mask="false">/mnt/user/appdata/janitorr/config</Config>
+    <Config Name="Config Path" Target="/workspace/application.yml" Default="" Mode="rw" Description="Where the config file will be stored" Type="Path" Display="advanced" Required="false" Mask="false">/mnt/user/appdata/janitorr/config/application.yml</Config>
 </Container>
