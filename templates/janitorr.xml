@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <Container version="2">
     <Name>Janitorr</Name>
-    <Repository>ghcr.io/schaka/janitorr:native</Repository>
+    <Repository>ghcr.io/schaka/janitorr:native-stable</Repository>
     <Registry>https://github.com/Schaka/janitorr</Registry>
     <Network>bridge</Network>
     <Shell>bash</Shell>
