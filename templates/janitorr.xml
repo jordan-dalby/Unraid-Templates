@@ -8,7 +8,7 @@
     <Privileged>false</Privileged>
     <Support>https://github.com/Schaka/janitorr/issues</Support>
     <Project>https://github.com/Schaka/janitorr</Project>
-    <Overview>Cleans your Radarr, Sonarr, Jellyseerr and Jellyfin before you run out of space on your server</Overview>
+    <Overview>Cleans your Radarr, Sonarr, Jellyseerr and Jellyfin before you run out of space on your server.</Overview>
     <Category>MediaApp:Video MediaServer:Video Other: Tools: Status:Stable</Category>
     <Icon>https://raw.githubusercontent.com/JamsRepos/Unraid-Templates/master/logos/janitorr.png</Icon>
     <TemplateURL>https://raw.githubusercontent.com/JamsRepos/Unraid-Templates/main/templates/janitorr.xml</TemplateURL>
