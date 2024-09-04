@@ -16,8 +16,9 @@
         <WebPage>https://github.com/JamsRepos</WebPage>
     </Maintainer>
     <Requires>You will need to configure the beszel web panel along-side this container. This is a reporting agent only.&#xD;This container must stay on the host network for reporting purposes.</Requires>
-    <Config Name="Listen Port" Target="PORT" Default="45876" Mode="" Description="The port for the SSH to listen on." Type="Variable" Display="always" Required="false" Mask="false">45876</Config>
-    <Config Name="Docker Socket" Target="/var/run/docker.sock" Default="/var/run/docker.sock" Mode="ro" Description="" Type="Path" Display="advanced" Required="true" Mask="false">/var/run/docker.sock</Config>
+    <Config Name="Listen Port" Target="PORT" Default="45876" Mode="" Description="The port which you have opened for the SSH port." Type="Variable" Display="always" Required="false" Mask="false">45876</Config>
     <Config Name="SSH Key" Target="KEY" Default="" Mode="" Description="Public SSH Key to use for authentication. Provided by the web panel." Type="Variable" Display="always" Required="true" Mask="false">ssh-ed25519 YOUR_PUBLIC_KEY</Config>
-    <Config Name="File System Path" Target="FILESYSTEM" Default="" Mode="" Description="Filesystem/partition to use for disk I/O stats. Use 'df -h' to find one." Type="Variable" Display="always" Required="false" Mask="false">/</Config>
+    <Config Name="Root File System" Target="FILESYSTEM" Default="" Mode="" Description="Filesystem/partition to use for disk I/O stats. Use 'df -h' to find one." Type="Variable" Display="always" Required="false" Mask="false">/</Config>
+    <Config Name="File System #1" Target="/extra-filesystems/cache" Default="" Mode="ro" Description="The path of the file system you wish to monitor. If you have multiple file systems you wish to monitor, duplicate this path mapping and rename accordingly. " Type="Path" Display="always" Required="false" Mask="false">/mnt/cache/.beszel</Config>
+    <Config Name="Docker Socket" Target="/var/run/docker.sock" Default="/var/run/docker.sock" Mode="ro" Description="" Type="Path" Display="advanced" Required="true" Mask="false">/var/run/docker.sock</Config>
 </Container>
