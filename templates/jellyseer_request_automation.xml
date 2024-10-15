@@ -10,16 +10,20 @@
     <Project>https://github.com/giuseppe99barchetta/jellyseer_request_automation</Project>
     <Overview>Automatically request suggested movies and TV shows to Jellyseer based on recently watched. </Overview>
     <Category>Downloaders: MediaApp:Video</Category>
+    <WebUI>http://[IP]:[PORT:5000]</WebUI>
     <Icon>https://raw.githubusercontent.com/JamsRepos/Unraid-Templates/master/logos/jellyseer_request_automation.png</Icon>
     <TemplateURL>https://raw.githubusercontent.com/JamsRepos/Unraid-Templates/main/templates/jellyseer_request_automation.xml</TemplateURL>
     <Maintainer>
         <WebPage>https://github.com/JamsRepos</WebPage>
     </Maintainer>
-    <Config Name="TMDb API Key" Target="TMDB_API_KEY" Default="" Mode="" Description="Your TMDb API Key." Type="Variable" Display="always" Required="true" Mask="false">your_tmdb_api_key</Config>
-    <Config Name="Jellyfin Application URL" Target="JELLYFIN_API_URL" Default="" Mode="" Description="The URL of your Jellyfin instance." Type="Variable" Display="always" Required="true" Mask="false">http://jellyfin:8096</Config>
-    <Config Name="Jellyfin API Key" Target="JELLYFIN_TOKEN" Default="" Mode="" Description="The API token for accessing Jellyfin." Type="Variable" Display="always" Required="true" Mask="false">your_jellyfin_api_key</Config>
-    <Config Name="Jellyseer Application URL" Target="JELLYSEER_API_URL" Default="" Mode="" Description="The URL of your Jellyseer instance." Type="Variable" Display="always" Required="true" Mask="false">http://jellyseer:5055</Config>
-    <Config Name="Jellyseer API Key" Target="JELLYSEER_TOKEN" Default="" Mode="" Description="The API token for accessing Jellyseer." Type="Variable" Display="always" Required="true" Mask="false">your_jellyseer_api_key</Config>
-    <Config Name="Maximum Amount of Similar Movies" Target="MAX_SIMILAR_MOVIE" Default="3" Mode="" Description="The maximum number of similar movies to download. Default is 3, with a max limit of 20." Type="Variable" Display="advanced" Required="false" Mask="false">3</Config>
-    <Config Name="Maximum Amount of Similar Shows" Target="MAX_SIMILAR_TV" Default="2" Mode="" Description="The maximum number of similar TV shows to download. Default is 2, with a max limit of 20." Type="Variable" Display="advanced" Required="false" Mask="false">2</Config>
+
+    <Config Name="Web UI Port" Target="5000" Default="" Mode="tcp" Description="" Type="Port" Display="always" Required="true" Mask="false">5155</Config>
+    <Config Name="TMDb API Key" Target="TMDB_API_KEY" Default="" Mode="" Description="Your TMDb API Key." Type="Variable" Display="always" Required="false" Mask="false">f1ad9cdcf629ce2666c25f3e4beb4f95</Config>
+    <Config Name="Jellyfin Application URL" Target="JELLYFIN_API_URL" Default="" Mode="" Description="The URL of your Jellyfin instance." Type="Variable" Display="always" Required="false" Mask="false">https://refor.ge</Config>
+    <Config Name="Jellyfin API Key" Target="JELLYFIN_TOKEN" Default="" Mode="" Description="The API token for accessing Jellyfin." Type="Variable" Display="always" Required="false" Mask="false">17a3867d144442de89df66ca6abfab2b</Config>
+    <Config Name="Jellyseer Application URL" Target="JELLYSEER_API_URL" Default="" Mode="" Description="The URL of your Jellyseer instance." Type="Variable" Display="always" Required="false" Mask="false">https://request.refor.ge</Config>
+    <Config Name="Jellyseer API Key" Target="JELLYSEER_TOKEN" Default="" Mode="" Description="The API token for accessing Jellyseer." Type="Variable" Display="always" Required="false" Mask="false">MTcwOTY2NjIwMDEyNDc1MGZlMDBlLTc0YTEtNDMwMi04ZDdiLWI2ZjAwZTRmN2FkMw==</Config>
+    <Config Name="Maximum Amount of Similar Movies" Target="MAX_SIMILAR_MOVIE" Default="3" Mode="" Description="The maximum number of similar movies to download. Default is 3, with a max limit of 20." Type="Variable" Display="always" Required="false" Mask="false">3</Config>
+    <Config Name="Maximum Amount of Similar Shows" Target="MAX_SIMILAR_TV" Default="2" Mode="" Description="The maximum number of similar TV shows to download. Default is 2, with a max limit of 20." Type="Variable" Display="always" Required="false" Mask="false">2</Config>
+    <Config Name="Cron Times" Target="CRON_TIMES" Default="" Mode="" Description="Your preferred cron schedule otherwise it runs at midnight." Type="Variable" Display="always" Required="false" Mask="false">0 0 * * *</Config>
 </Container>
