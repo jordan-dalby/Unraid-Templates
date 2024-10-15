@@ -15,7 +15,6 @@
     <Maintainer>
         <WebPage>https://github.com/JamsRepos</WebPage>
     </Maintainer>
-    <Config Name="Data Path" Target="/app" Default="" Mode="rw" Description="Where the container data will be stored" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/jellyseer_request_automation/</Config>
     <Config Name="TMDb API Key" Target="TMDB_API_KEY" Default="" Mode="" Description="Your TMDb API Key." Type="Variable" Display="always" Required="true" Mask="false">your_tmdb_api_key</Config>
     <Config Name="Jellyfin Application URL" Target="JELLYFIN_API_URL" Default="" Mode="" Description="The URL of your Jellyfin instance." Type="Variable" Display="always" Required="true" Mask="false">http://jellyfin:8096</Config>
     <Config Name="Jellyfin API Key" Target="JELLYFIN_TOKEN" Default="" Mode="" Description="The API token for accessing Jellyfin." Type="Variable" Display="always" Required="true" Mask="false">your_jellyfin_api_key</Config>
