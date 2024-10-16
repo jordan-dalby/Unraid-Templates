@@ -1,14 +1,14 @@
 <?xml version="1.0"?>
 <Container version="2">
-    <Name>Suggestarr</Name>
+    <Name>SuggestArr</Name>
     <Repository>ciuse99/suggestarr:latest</Repository>
-    <Registry>https://hub.docker.com/r/ciuse99/jellyseer_request_automation/</Registry>
+    <Registry>https://hub.docker.com/r/ciuse99/suggestarr</Registry>
     <Network>host</Network>
     <Shell>bash</Shell>
     <Privileged>false</Privileged>
     <Support>https://github.com/giuseppe99barchetta/suggestarr/issues</Support>
     <Project>https://github.com/giuseppe99barchetta/suggestarr</Project>
-    <Overview>Automatically request suggested movies and TV shows to Jellyseer based on recently watched. </Overview>
+    <Overview>Automatically request suggested movies and TV shows to Jellyseerr based on recently watched. </Overview>
     <Category>Downloaders: MediaApp:Video</Category>
     <WebUI>http://[IP]:[PORT:5000]</WebUI>
     <Icon>https://raw.githubusercontent.com/JamsRepos/Unraid-Templates/master/logos/suggestarr.png</Icon>
@@ -21,8 +21,8 @@
     <Config Name="TMDb API Key" Target="TMDB_API_KEY" Default="" Mode="" Description="Your TMDb API Key." Type="Variable" Display="always" Required="false" Mask="false">your_tmdb_api_key</Config>
     <Config Name="Jellyfin Application URL" Target="JELLYFIN_API_URL" Default="" Mode="" Description="The URL of your Jellyfin instance." Type="Variable" Display="always" Required="false" Mask="false">http://jellyfin:8096</Config>
     <Config Name="Jellyfin API Key" Target="JELLYFIN_TOKEN" Default="" Mode="" Description="The API token for accessing Jellyfin." Type="Variable" Display="always" Required="false" Mask="false">your_jellyfin_api_key</Config>
-    <Config Name="Jellyseer Application URL" Target="JELLYSEER_API_URL" Default="" Mode="" Description="The URL of your Jellyseer instance." Type="Variable" Display="always" Required="false" Mask="false">http://jellyseer:5055</Config>
-    <Config Name="Jellyseer API Key" Target="JELLYSEER_TOKEN" Default="" Mode="" Description="The API token for accessing Jellyseer." Type="Variable" Display="always" Required="false" Mask="false">your_jellyseer_api_key</Config>
+    <Config Name="Jellyseerr Application URL" Target="JELLYSEER_API_URL" Default="" Mode="" Description="The URL of your Jellyseerr instance." Type="Variable" Display="always" Required="false" Mask="false">http://jellyseerr:5055</Config>
+    <Config Name="Jellyseerr API Key" Target="JELLYSEER_TOKEN" Default="" Mode="" Description="The API token for accessing Jellyseerr." Type="Variable" Display="always" Required="false" Mask="false">your_jellyseerr_api_key</Config>
     <Config Name="Maximum Amount of Similar Movies" Target="MAX_SIMILAR_MOVIE" Default="3" Mode="" Description="The maximum number of similar movies to download. Default is 3, with a max limit of 20." Type="Variable" Display="always" Required="false" Mask="false">3</Config>
     <Config Name="Maximum Amount of Similar Shows" Target="MAX_SIMILAR_TV" Default="2" Mode="" Description="The maximum number of similar TV shows to download. Default is 2, with a max limit of 20." Type="Variable" Display="always" Required="false" Mask="false">2</Config>
     <Config Name="Cron Times" Target="CRON_TIMES" Default="" Mode="" Description="Your preferred cron schedule otherwise it runs at midnight." Type="Variable" Display="always" Required="false" Mask="false">0 0 * * *</Config>
