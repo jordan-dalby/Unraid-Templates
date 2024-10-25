@@ -16,14 +16,7 @@
     <Maintainer>
         <WebPage>https://github.com/JamsRepos</WebPage>
     </Maintainer>
-
     <Config Name="Web UI Port" Target="5000" Default="" Mode="tcp" Description="" Type="Port" Display="always" Required="true" Mask="false">5155</Config>
-    <Config Name="TMDb API Key" Target="TMDB_API_KEY" Default="" Mode="" Description="Your TMDb API Key." Type="Variable" Display="always" Required="false" Mask="false">your_tmdb_api_key</Config>
-    <Config Name="Jellyfin Application URL" Target="JELLYFIN_API_URL" Default="" Mode="" Description="The URL of your Jellyfin instance." Type="Variable" Display="always" Required="false" Mask="false">http://jellyfin:8096</Config>
-    <Config Name="Jellyfin API Key" Target="JELLYFIN_TOKEN" Default="" Mode="" Description="The API token for accessing Jellyfin." Type="Variable" Display="always" Required="false" Mask="false">your_jellyfin_api_key</Config>
-    <Config Name="Jellyseerr Application URL" Target="JELLYSEER_API_URL" Default="" Mode="" Description="The URL of your Jellyseerr instance." Type="Variable" Display="always" Required="false" Mask="false">http://jellyseerr:5055</Config>
-    <Config Name="Jellyseerr API Key" Target="JELLYSEER_TOKEN" Default="" Mode="" Description="The API token for accessing Jellyseerr." Type="Variable" Display="always" Required="false" Mask="false">your_jellyseerr_api_key</Config>
-    <Config Name="Maximum Amount of Similar Movies" Target="MAX_SIMILAR_MOVIE" Default="3" Mode="" Description="The maximum number of similar movies to download. Default is 3, with a max limit of 20." Type="Variable" Display="always" Required="false" Mask="false">3</Config>
-    <Config Name="Maximum Amount of Similar Shows" Target="MAX_SIMILAR_TV" Default="2" Mode="" Description="The maximum number of similar TV shows to download. Default is 2, with a max limit of 20." Type="Variable" Display="always" Required="false" Mask="false">2</Config>
-    <Config Name="Cron Times" Target="CRON_TIMES" Default="" Mode="" Description="Your preferred cron schedule otherwise it runs at midnight." Type="Variable" Display="always" Required="false" Mask="false">0 0 * * *</Config>
+    <Config Name="config" Target="/app/config/config_files" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/suggestarr</Config>
+</Container>
 </Container>
